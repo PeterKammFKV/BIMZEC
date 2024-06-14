@@ -6,69 +6,43 @@
     <title>BIMZEC</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f0f0f0;
-            border-radius: 8px;
-        }
-        
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .subtitle {
-            text-align: justify;
-            max-width: 600px; /* Adjust max-width as needed */
-            margin: 0 auto; /* Center the subtitle block */
-            line-height: 1.6; /* Adjust line height for readability */
-        }
-        
-        .download-widget, .links {
-            margin-top: 10px;
-            text-align: center;
-        }
-        
         .image-container {
-            position: relative; /* Change to relative to keep image in flow */
-            margin-top: 20px; /* Adjust margin as needed */
+            position: absolute;
+            bottom: -150px;
+            left: 22%;
+            transform: translateX(-50%);
             text-align: center;
+        }
+
+          .subtitle {
+            text-align: justify;
+            padding-left: 1cm; /* Indent all lines approximately 1cm */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>BIMZEC</h1>
-        <p class="subtitle">Research project about <strong>low-emission construction logistics for biobased modular high-rise in Amsterdam</strong>. The research was conducted by TU Delft, Hogeschool van Amsterdam & AMS Institute in 2023.</p>
+        <div>
+            <h1>BIMZEC</h1>
+            <p class="subtitle">Research project about <strong>low-emission construction logistics for biobased<br>modular high-rise in Amsterdam</strong>. The research was conducted by<br>TU Delft, Hogeschool van Amsterdam & AMS Institute in 2023.</p>
+        </div>
+    </div>
+    <div class="download-widget">
+        <a href="presentation.pdf" download="BIMZEC_Presentation.pdf">Download PDF Presentation</a>
+    </div>
+    <div class="links">
+        <a href="https://openresearch.amsterdam/nl/media/inline/2024/2/26/01_main_report_bimzec.pdf" target="_blank">BIMZEC Main Report (NL)</a>
+    </div>
+    <div class="links">
+        <a href="https://www.ams-institute.org/urban-challenges/circularity-urban-regions/industrialized-modular-and-low-emissions-highrise-buildings/" target="_blank">Project 'Low-emission Highrise'</a>
+    </div>
+    <div class="links">
+        <a href="https://www.levs.nl/projecten/hoog-hout-haalbaar" target="_blank">Project Brochure 'Hoog Hout haalbaar'</a>
+    </div>
     
-        <div class="download-widget">
-            <a href="presentation.pdf" download="BIMZEC_Presentation.pdf">Download PDF Presentation</a>
-        </div>
-        
-        <div class="links">
-            <a href="https://openresearch.amsterdam/nl/media/inline/2024/2/26/01_main_report_bimzec.pdf" target="_blank">BIMZEC Main Report (NL)</a>
-        </div>
-        
-        <div class="links">
-            <a href="https://www.ams-institute.org/urban-challenges/circularity-urban-regions/industrialized-modular-and-low-emissions-highrise-buildings/" target="_blank">Project 'Low-emission Highrise'</a>
-        </div>
-        
-        <div class="links">
-            <a href="https://www.levs.nl/projecten/hoog-hout-haalbaar" target="_blank">Project Brochure 'Hoog Hout haalbaar'</a>
-        </div>
-        
-        <!-- Add the image at the bottom of the page -->
-        <div class="image-container">
-            <img src="https://i.postimg.cc/1zrts23p/image.jpg" alt="Description of the image" width="600" height="400">
-        </div>
+    <!-- Add the image at the bottom of the page -->
+    <div class="image-container">
+        <img src="https://i.postimg.cc/1zrts23p/image.jpg" alt="Description of the image" width="600" height="400">
     </div>
 </body>
 </html>
