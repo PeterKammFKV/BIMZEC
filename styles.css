@@ -1,6 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,28 +23,11 @@ h1 {
     margin-bottom: 30px;
 }
 
-.links {
+.links, .download-widget {
     margin-bottom: 50px;
 }
 
-.links a {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 20px;
-}
-
-.links a:hover {
-    background-color: #ffffff;
-    color: #1a1a1a;
-}
-
-.download-widget a {
+.links a, .download-widget a {
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid #ffffff;
@@ -51,7 +38,7 @@ h1 {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.download-widget a:hover {
+.links a:hover, .download-widget a:hover {
     background-color: #ffffff;
     color: #1a1a1a;
 }
