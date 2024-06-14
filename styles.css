@@ -1,20 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIMZEC</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>BIMZEC</h1>
-        <div class="links">
-            <a href="https://openresearch.amsterdam/nl/page/105221/transport" target="_blank">BIMZEC Report on OpenResearch Amsterdam (in Dutch)</a>
-        </div>
-        <div class="download-widget">
-            <a href="presentation.pdf" download="BIMZEC_Presentation.pdf">Download PDF Presentation</a>
-        </div>
-    </div>
-</body>
-</html>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+
+.links {
+    margin-bottom: 50px;
+}
+
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+}
+
+.links a:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.download-widget a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-widget a:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
