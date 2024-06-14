@@ -24,11 +24,14 @@ h1 {
 }
 
 .subtitle {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
-    color: #999;
-    /* Adjust font color */
-}
+            text-align: justify;
+            max-width: 600px; /* Adjust max-width as needed */
+            margin: 0 auto; /* Center the subtitle block */
+            line-height: 1.6; /* Adjust line height for readability */
+            white-space: nowrap; /* Prevent wrapping */
+            overflow: hidden; /* Hide overflow text */
+            text-overflow: ellipsis; /* Display ellipsis for overflow text */
+        }
 
 .links, .download-widget {
     margin-bottom: 50px;
