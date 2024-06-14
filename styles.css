@@ -1,5 +1,35 @@
 /* Existing CSS styles */
 
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.links a:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
 .buttons {
     margin-bottom: 30px;
 }
@@ -7,7 +37,23 @@
 .buttons a {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.buttons a:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.download-widget a {
+    display: inline-block;
+    padding: 10px 20px;
     border: 2px solid #ffffff;
     border-radius: 5px;
     text-decoration: none;
@@ -16,15 +62,7 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.buttons a:hover {
+.download-widget a:hover {
     background-color: #ffffff;
     color: #1a1a1a;
-}
-
-.project-button {
-    background-color: #007bff; /* Blue background color */
-}
-
-.brochure-button {
-    background-color: #28a745; /* Green background color */
 }
