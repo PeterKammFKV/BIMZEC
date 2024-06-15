@@ -3,46 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIMZEC</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Simple Website</title>
     <style>
-        .image-container {
-            position: absolute;
-            bottom: -150px;
-            left: 22%;
-            transform: translateX(-50%);
-            text-align: center;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start; /* Align content to the top of the page */
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            padding-left: 10%; /* Adjust left padding for alignment */
+            text-align: left; /* Align text content to the left */
+            margin-top: 120px; /* Upper margin for desktop */
+        }
+        .title {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .download-link,
+        .widget {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .download-link:hover,
+        .widget:hover {
+            background-color: white;
+            color: black;
+        }
+        .bottom-picture {
+            align-self: center;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
         }
 
-          .subtitle {
-            text-align: justify;
-            padding-left: 1cm; /* Indent all lines approximately 1cm */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding-left: 5%; /* Adjust left padding for smaller screens */
+                margin-top: 10px; /* Upper margin for mobile */
+            }
+            .title {
+                font-size: 2em;
+                margin-bottom: 10px; /* Reduce bottom margin for smaller screens */
+            }
+            .download-link,
+            .widget {
+                margin-bottom: 10px; /* Reduce bottom margin for smaller screens */
+            }
+            .bottom-picture {
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div>
-            <h1>BIMZEC</h1>
-            <p class="subtitle">Research project about <strong>low-emission construction logistics for <br> biobased modular high-rise in Amsterdam</strong>. The research <br> was conducted by TU Delft, Hogeschool van Amsterdam & AMS Institute in 2023.</p>
-        </div>
+        <div class="title">BIMZEC</div>
+        <a href="presentation.pdf" download="BIMZEC_Presentation.pdf" class="download-link">Download PDF Presentation</a>
+        
+        <a href="https://openresearch.amsterdam/nl/media/inline/2024/2/26/01_main_report_bimzec.pdf" class="widget">BIMZEC Main Report (NL)</a>
+        <a href="https://www.ams-institute.org/urban-challenges/circularity-urban-regions/industrialized-modular-and-low-emissions-highrise-buildings/" class="widget">Project 'Low-emission Highrise'</a>
+        <a href="https://www.levs.nl/projecten/hoog-hout-haalbaar" class="widget">Project Brochure 'Hoog Hout haalbaar'</a>
     </div>
-    <div class="download-widget">
-        <a href="presentation.pdf" download="BIMZEC_Presentation.pdf">Download PDF Presentation</a>
-    </div>
-    <div class="links">
-        <a href="https://openresearch.amsterdam/nl/media/inline/2024/2/26/01_main_report_bimzec.pdf" target="_blank">BIMZEC Main Report (NL)</a>
-    </div>
-    <div class="links">
-        <a href="https://www.ams-institute.org/urban-challenges/circularity-urban-regions/industrialized-modular-and-low-emissions-highrise-buildings/" target="_blank">Project 'Low-emission Highrise'</a>
-    </div>
-    <div class="links">
-        <a href="https://www.levs.nl/projecten/hoog-hout-haalbaar" target="_blank">Project Brochure 'Hoog Hout haalbaar'</a>
-    </div>
-    
-    <!-- Add the image at the bottom of the page -->
-    <div class="image-container">
-        <img src="https://i.postimg.cc/1zrts23p/image.jpg" alt="Description of the image" width="600" height="400">
-    </div>
+    <img src="https://i.postimg.cc/1zrts23p/image.jpg" alt="Bottom Picture" class="bottom-picture">
 </body>
 </html>
